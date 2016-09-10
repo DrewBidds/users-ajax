@@ -1,0 +1,20 @@
+<h1>Welcome to the Users Ajax</h1>
+
+<hr />
+
+<button id="load_users">Load Users</button>
+<button id="show_create">Create Users</button>
+
+<div id="new_user_content" class="no-display">
+  <form action="/users" method="POST" id="new_user">
+    <input id='user_title' type='text' placeholder="user Title" name="user[title]" required />
+    <br />
+    <input id='user_code' type='text' placeholder="user Code" name="user[code]" />
+    <br />
+    <textarea id='user_description' placeholder="User Description" name="user[description]"></textarea>
+    <br />
+    <input type='submit' />
+  </form>
+</div>
+
+<ul id="users"></ul>
